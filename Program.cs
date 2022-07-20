@@ -1,17 +1,19 @@
-﻿using System;
+using System;
 internal class Program
 {
     static void Main(string[] args)
     {
-        int health = 50, maxHealth = 100;
-        int mana = 40, maxMana = 100;
+        int health = 50;
+        int maxHealth = 100;
+        int mana = 40;
+        int maxMana = 100;
 
-        drawBar(health, maxHealth, 15,3);
+        DrawBar(health, maxHealth, 15,3);
 
-        drawBar(mana, maxMana, 15,4);
+        DrawBar(mana, maxMana, 15,4);
     }
 
-    static void drawBar(int value, int maxValue, int yPosition, int xPosition)
+    static void DrawBar(int value, int maxValue, int yPosition, int xPosition)
     {
         int convertToUnit = 10;
         value /= convertToUnit;
